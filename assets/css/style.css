@@ -1,6 +1,6 @@
 @font-face {
   font-family: VAG Rounded;
-  src: url(../fonts/VAG Rounded.ttf);
+  src: url![](../fonts/VAG Rounded.ttf);
 }
 
 :root {
@@ -37,7 +37,7 @@ p {
 	justify-content: center;
 	width: 100%;
 	height: 348px;
-	background: url("../images/index.png") center no-repeat;
+	background: url![]("../images/index.png") center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
