@@ -1,10 +1,17 @@
 @font-face {
-  font-family: VAG Rounded;
-  src: url(../fonts/VAG Rounded.ttf);
+	font-family: VAG Rounded;
+	src: url(../fonts/VAG Rounded.eot),
+	url(../fonts/VAG Rounded.ttf) format(truetype),
+	url(../fonts/VAG Rounded.woff) format(woff),
+	url(../fonts/VAG Rounded.woff2) format(woff2),
+	url(../fonts/VAG Rounded.svg) format(svg)
 }
 
 :root {
 	--main: #2E3035;
+	--main_background: #1a1c21;
+	--accent: #171544;
+	--accent_light: #211f4e;
 	
 	--main_text: #fff;
 	--logo_text: #fff;
@@ -31,6 +38,12 @@ p {
 	padding-left: 1em;
 }
 
+input[type=text] {
+  background: var(--main);
+  border: solid 1px var(--main_text);
+  color: var(--main_text);
+}
+
 .intro {
 	display: flex;
 	flex-direction: column;
@@ -55,52 +68,59 @@ p {
 
 .intro_slogan {
 	font-family: VAG Rounded;
-	font-size: 2.65em;
+	font-size: 2.69em;
 	text-align: center;
 	color: var(--slogan_text);
 }
 
-/* Collaps */
-.collapsible {
-	display: inline-block;
-	position: absolute;
+.book {
 	width: 98%;
+	margin-top: 1em;
 	margin-left: 1%;
 	margin-right: 1%;
-	background-color: #171544;
-	color: white;
+	box-shadow: none;
+	border: 1px solid var(--main_text);
+	border-radius: 5px;
+}
+
+.collapsible {
+	background-color: var(--accent);
+	border: none;
+	border-top: 1px solid var(--main_text);
+	color: var(--main_text);
 	cursor: pointer;
 	padding: 18px;
-	border: none;
+	width: 100%;
 	text-align: left;
 	outline: none;
 	font-size: 1em;
 }
 
-.active, .collapsible:hover {
-	background-color: #211f4e;
-}
-
 .collapsible:after {
-	content: '\002B';
-	color: var(--main_text);
-	font-weight: bold;
-	float: right;
+  content: "\002B"; /* Plus  (+) sign */
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--main_text);
+  float: right;
+  margin-left: 5px;
 }
 
 .active:after {
-	content: "\2212";
+  content: "\2212"; /* Minus (-) sign */
+}
+
+.active,
+.collapsible:hover {
+	background-color: var(--accent_light);
 }
 
 .content {
-	width: 98%;
-	margin-top: 4em;
-	margin-left: 1%;
-	margin-right: 1%;
-	padding-left: 18px;
-	max-height: 0;
+	background-color: var(--main_background);
+	width: 100%;
+	padding: 0 1em;
+	box-sizing: border-box;
+	display: none;
 	overflow: hidden;
-	transition: max-height 0.2s ease-out;
 }
 
 .content .question {
@@ -110,4 +130,10 @@ p {
 .content br {
 	display: block;
 	margin: 2px;
+}
+
+[class~='collapsible']:last-of-type,
+[class~='content']:last-of-type {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
