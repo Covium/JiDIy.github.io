@@ -12,6 +12,7 @@
 	--main_background: #1a1c21;
 	--accent: #171544;
 	--accent_light: #211f4e;
+	--book_background: #24262b;
 	
 	--main_text: #fff;
 	--logo_text: #fff;
@@ -74,8 +75,9 @@ input[type=text] {
 }
 
 .book {
+	background: var(--book_background);
 	width: 98%;
-	margin-top: 1em;
+	margin-top: 1.25em;
 	margin-left: 1%;
 	margin-right: 1%;
 	box-shadow: none;
