@@ -1,10 +1,10 @@
-@font-face {
-	font-family: VAG Rounded;
+@font-face { 
+	font-family: 'VAG Rounded';
 	src: url(../fonts/VAG Rounded.eot);
-	src: url(../fonts/VAG Rounded.ttf) format(truetype),
-	url(../fonts/VAG Rounded.woff) format(woff),
-	url(../fonts/VAG Rounded.woff2) format(woff2),
-	url(../fonts/VAG Rounded.svg) format(svg);
+	src: url(../fonts/VAG Rounded.woff) format('woff'),
+		 url(../fonts/VAG Rounded.woff2) format('woff2'),
+	     url(../fonts/VAG Rounded.ttf) format('truetype'),
+	     url(../fonts/VAG Rounded.svg) format('svg');
 }
 
 :root {
