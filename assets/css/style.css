@@ -3,8 +3,8 @@
 	src: url(../fonts/VAG Rounded.eot);
 	src: url(../fonts/VAG Rounded.woff) format('woff'),
 		 url(../fonts/VAG Rounded.woff2) format('woff2'),
-	     url(../fonts/VAG Rounded.ttf) format('truetype'),
-	     url(../fonts/VAG Rounded.svg) format('svg');
+		 url(../fonts/VAG Rounded.ttf) format('truetype'),
+		 url(../fonts/VAG Rounded.svg) format('svg');
 }
 
 :root {
@@ -80,6 +80,7 @@ input[type=text] {
 	margin-top: 1.25em;
 	margin-left: 1%;
 	margin-right: 1%;
+	margin-bottom: 1.25em;
 	box-shadow: none;
 	border: 1px solid var(--main_text);
 	border-radius: 5px;
