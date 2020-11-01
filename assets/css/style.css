@@ -1,22 +1,22 @@
 @font-face { 
-	font-family: 'VAG Rounded';
-	src: url(../fonts/VAG Rounded/VAG Rounded.eot) format ('eot');
-	src: url(../fonts/VAG Rounded/VAG Rounded.ttf) format('truetype'),
-		 url(../fonts/VAG Rounded/VAG Rounded.svg) format('svg'),
-		 url(../fonts/VAG Rounded/VAG Rounded.woff) format('woff'),
-		 url(../fonts/VAG Rounded/VAG Rounded.woff2) format('woff2');
+    font-family: 'VAG Rounded';
+    src: url(../fonts/VAG Rounded/VAG Rounded.eot) format ('eot');
+    src: url(../fonts/VAG Rounded/VAG Rounded.ttf) format('truetype'),
+         url(../fonts/VAG Rounded/VAG Rounded.svg) format('svg'),
+         url(../fonts/VAG Rounded/VAG Rounded.woff) format('woff'),
+         url(../fonts/VAG Rounded/VAG Rounded.woff2) format('woff2');
 }
 
 :root {
-	--main: #2E3035;
-	--main_background: #1a1c21;
-	--accent: #171544;
-	--accent_light: #211f4e;
-	--book_background: #24262b;
-	
-	--main_text: #fff;
-	--logo_text: #fff;
-	--slogan_text: #ddd;
+    --main: #2E3035;
+    --main_background: #1a1c21;
+    --accent: #171544;
+    --accent_light: #211f4e;
+    --book_background: #24262b;
+    
+    --main_text: #fff;
+    --logo_text: #fff;
+    --slogan_text: #ddd;
 }
 
 html, body {
