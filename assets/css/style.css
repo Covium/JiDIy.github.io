@@ -1,5 +1,5 @@
 @font-face { 
-    font-family: 'VAG Rounded';
+    font-family: 'VAG Rounded', sans-serif;
     src: url(../fonts/VAG Rounded/VAG Rounded.eot) format ('eot');
     src: url(../fonts/VAG Rounded/VAG Rounded.ttf) format('truetype'),
          url(../fonts/VAG Rounded/VAG Rounded.svg) format('svg'),
