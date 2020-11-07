@@ -117,6 +117,7 @@ input[type=text] {
     padding: 0 1em 18px;
     width: 100%;
     overflow: hidden;
+    font-size: 1em;
 }
 
 .content .question {
