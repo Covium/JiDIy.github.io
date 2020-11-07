@@ -56,14 +56,11 @@ input[type=text] {
 }
 
 .intro_logo {
+    margin-top: 10px;
+    margin-bottom: -20px;
     text-align: center;
     font-family: 'VAG Rounded', sans-serif;
     font-size: 5em;
-}
-
-.intro_logo br {
-    display: block;
-    margin: -10px;
 }
 
 .intro_slogan {
