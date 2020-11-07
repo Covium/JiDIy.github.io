@@ -1,10 +1,10 @@
 @font-face { 
     font-family: 'VAG Rounded', sans-serif;
-    src: url(../fonts/VAG Rounded/VAG Rounded.eot) format ('eot');
-    src: url(../fonts/VAG Rounded/VAG Rounded.ttf) format('truetype'),
-         url(../fonts/VAG Rounded/VAG Rounded.svg) format('svg'),
-         url(../fonts/VAG Rounded/VAG Rounded.woff) format('woff'),
-         url(../fonts/VAG Rounded/VAG Rounded.woff2) format('woff2');
+    src: url('../fonts/VAG Rounded/VAG Rounded.eot') format('eot');
+    src: url('../fonts/VAG Rounded/VAG Rounded.ttf') format('truetype'),
+         url('../fonts/VAG Rounded/VAG Rounded.svg') format('svg'),
+         url('../fonts/VAG Rounded/VAG Rounded.woff') format('woff'),
+         url('../fonts/VAG Rounded/VAG Rounded.woff2') format('woff2');
 }
 
 :root {
@@ -118,13 +118,13 @@ input[type=text] {
     box-sizing: border-box;
     display: none;
     background-color: var(--main_background);
-    padding: 0 1em;
+    padding: 0 1em 18px;
     width: 100%;
     overflow: hidden;
 }
 
 .content .question {
-    padding-top: 5px;
+    padding-top: 18px;
     font-weight: bold;
 }
 
@@ -132,3 +132,4 @@ input[type=text] {
     display: block;
     margin: 2px;
 }
+
