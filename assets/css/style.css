@@ -57,7 +57,7 @@ input[type=text] {
 
 .intro_logo {
     text-align: center;
-    font-family: VAG Rounded, sans-serif;
+    font-family: 'VAG Rounded', sans-serif;
     font-size: 5em;
 }
 
@@ -69,7 +69,7 @@ input[type=text] {
 .intro_slogan {
     text-align: center;
     color: var(--slogan_text);
-    font-family: VAG Rounded, sans-serif;
+    font-family: 'VAG Rounded', sans-serif;
     font-size: 2.69em;
 }
 
