@@ -10,7 +10,11 @@
     --main_text: #fff;
     --logo_text: #fff;
     --slogan_text: #ddd;
+
+    --main_border: solid 1px var(--main_text);
 }
+
+
 
 * {
     font-family: Roboto, sans-serif;
@@ -22,6 +26,7 @@ body {
     background-color: var(--main);
     padding: 0;
     width: 100%;
+    height: 100%;
     color: var(--main_text);
     font-size: 1em;
 }
@@ -37,10 +42,12 @@ p {
 }
 
 input[type=text] {
-    border: solid 1px var(--main_text);
+    border: var(--main_border);
     background: var(--main);
     color: var(--main_text);
 }
+
+
 
 .intro {
     display: flex;
@@ -70,19 +77,19 @@ input[type=text] {
 }
 
 .book {
-    margin: 1.25em 1%;
-    border: 1px solid var(--main_text);
+    margin: 1.25em auto;
+    border: var(--main_border);
     border-radius: 5px;
     box-shadow: none;
     background: var(--book_background);
-    width: 98%;
+    width: 60%;
     overflow: hidden;
 }
 
 .collapsible {
     outline: none;
     border: none;
-    border-top: 1px solid var(--main_text);
+    border-top: var(--main_border);
     background-color: var(--accent);
     cursor: pointer;
     padding: 18px;
@@ -113,6 +120,7 @@ input[type=text] {
 .content {
     box-sizing: border-box;
     display: none;
+    transition: max-height 0.2s ease-out;
     background-color: var(--main_background);
     padding: 0 1em 18px;
     width: 100%;
@@ -126,3 +134,23 @@ input[type=text] {
     font-weight: bold;
 }
 
+.wrapper {
+    margin-bottom: -40px;
+    min-height: 100%;
+}
+
+.footer,
+.push {
+    height: 40px;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.footer ul,
+.footer li {
+    margin: 0;
+    padding: auto;
+    font-size: 30px;
+}
