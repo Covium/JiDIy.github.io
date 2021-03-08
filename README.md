@@ -1,4 +1,4 @@
-# JiDIy's Github Page
+# Coviums's Github Page
 Just trying to make things work™
 
-[JiDIy.github.io](JiDIy.github.io)
+[Covium.github.io](Covium.github.io)
