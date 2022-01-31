@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 
 :root {
     --main: #2E3035;
@@ -9,7 +10,7 @@
     
     --main_text: #fff;
     --logo_text: #fff;
-    --slogan_text: #ddd;
+    --slogan_text: #fffdd0;
 
     --main_border: solid 1px var(--main_text);
 }
@@ -17,7 +18,7 @@
 
 
 * {
-    font-family: Roboto, sans-serif;
+    font-family: 'Varela', Roboto, sans-serif;
 }
 
 html,
@@ -28,23 +29,6 @@ body {
     width: 100%;
     height: 100%;
     color: var(--main_text);
-}
-
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
-p {
-    padding-left: 1em;
-}
-
-input[type=text] {
-    border: var(--main_border);
-    background: var(--main);
-    color: var(--main_text);
-    font-size: 14px;
 }
 
 
@@ -65,18 +49,25 @@ input[type=text] {
     text-align: center;
     letter-spacing: -4px;
     font-family: 'Varela Round', sans-serif;
-    font-size: 80px;
+    font-size: 110px;
 }
 
 .intro_slogan {
     text-align: center;
-    letter-spacing: -2.5px;
+    letter-spacing: -1px;
     color: var(--slogan_text);
     font-family: 'Varela Round', sans-serif;
     font-size: 44px;
 }
 
-.book {
+
+
+.wrapper {
+    margin-bottom: -40px;
+    min-height: 100%;
+}
+
+.theme {
     margin: 1.25em auto;
     border: var(--main_border);
     border-radius: 5px;
@@ -86,24 +77,29 @@ input[type=text] {
     overflow: hidden;
 }
 
+.theme .name {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0.3em 25px;
+}
+
+
 .collapsible {
     outline: none;
     border: none;
     border-top: var(--main_border);
     background-color: var(--accent);
     cursor: pointer;
-    padding: 18px;
+    padding: 15px;
     width: 100%;
     text-align: left;
     color: var(--main_text);
-    font-size: 15px;
+    font-size: 21px;
 }
 
 .collapsible:after {
     float: right;
-    margin-left: 5px;
     color: var(--main_text);
-    font-size: 15px;
     font-weight: bold;
     content: "\002B"; /* Plus  (+) sign */
 }
@@ -117,39 +113,35 @@ input[type=text] {
     background-color: var(--accent_light);
 }
 
+
 .content {
     box-sizing: border-box;
     display: none;
     background-color: var(--main_background);
-    padding: 0 1em 18px;
+    padding: 0 1em;
     overflow: hidden;
-    font-size: 15px;
+    font-size: 14px;
 }
 
-.content .question {
-    padding-top: 18px;
-    padding-bottom: 6px;
-    font-weight: bold;
+.content a,
+.content a:visited {
+    color: var(--slogan_text);
+    text-decoration: none;
 }
 
-.wrapper {
-    margin-bottom: -40px;
-    min-height: 100%;
+.content dt {
+    margin-top: 13px;
+    margin-left: 1.3em;
+    font-size: 19px;
 }
 
-.footer,
-.push {
-    height: 40px;
+.content dd {
+    margin-bottom: 13px;
+    margin-left: 0;
+    font-style: italic;
 }
 
-.footer {
-    background: rgba(0, 0, 0, 0.6);
-}
 
-.footer ul,
-.footer li {
-    font-size: 30px;
-}
 
 @media only screen and (max-width: 1080px) {
     :root {
