@@ -69,7 +69,7 @@ body {
 }
 
 .theme {
-    margin: 1.25em auto;
+    margin: 1.25em auto 0;
     border: var(--main_border);
     border-radius: 5px;
     box-shadow: none;
@@ -144,6 +144,8 @@ body {
     margin-left: 0;
     font-style: italic;
 }
+
+.push { height: 1.25em; }
 
 
 
