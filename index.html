@@ -7,6 +7,14 @@
     <title>Covium's Stuff</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script>
+        window.onload = function(){
+          var anchors = document.getElementsByTagName('a');
+          for (var i=0; i<anchors.length; i++){
+            anchors[i].setAttribute('target', '_blank');
+          }
+        }
+    </script>
 </head>
 
 
